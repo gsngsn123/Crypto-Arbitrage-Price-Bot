@@ -27,6 +27,6 @@ module.exports = {
     UniPool3Address : "0x7f9121B4f4E040fd066e9Dc5C250Cf9B4338D5BC",
     UniPool4Address : "",
     ChainLinkMaticToUSDTAddress: "0xAB594600376Ec9fD91F8e885dADF0CE036862dE0",
-    AaveFlashLoanV3FactoryAddress: "0x64D3D6D7001697C03F02250BB0451dD1c48b4C13",
-    AaveFlashLoanAddress: "0xf2615c9169E1b42fBE21847335cDe3814cD8Cddf"
+    AaveFlashLoanV3FactoryAddress: "0xdf42fF3Ba1344b20C927eED8F490DB053536f620",
+    AaveFlashLoanAddress: "0x55d3ce5c603be1E6F53618Db5b80121194dBDbA2"
 }
