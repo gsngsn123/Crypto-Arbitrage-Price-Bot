@@ -240,7 +240,7 @@ let setTokenDirectionForAaveLoan = () => {
  * information needed.
  */
 let tryFlashLoan = async () => {
-    if(pair1Dif >= 2){
+    if(pair1Dif >= 0.1){
         console.log('pair1')
         let direction = getTokenDirection(uniPrice,sushiPrice, !pair1AavePool)
         console.log(direction)
@@ -248,7 +248,7 @@ let tryFlashLoan = async () => {
         console.log(amountToTrade)
         await executeFlashLoan(uniswapPriceCalc.token0Trade,uniswapPriceCalc.token1Trade,direction,uniswapPriceCalc.poolFee,amountToTrade,0,50000000000)
     }
-    if(pair2Dif >= 2){
+    if(pair2Dif >= 0.1){
         console.log('pair2')
         let direction = getTokenDirection(uniPrice,sushiPrice, !pair2AavePool)
         console.log(direction)
@@ -256,7 +256,7 @@ let tryFlashLoan = async () => {
         console.log(amountToTrade)
         await executeFlashLoan(uniswapPriceCalc2.token0Trade,uniswapPriceCalc2.token1Trade,direction,uniswapPriceCalc2.poolFee,amountToTrade,0,50000000000)
     }
-    if(pair3Dif >= 2){
+    if(pair3Dif >= 0.1){
         console.log('pair3')
         let direction = getTokenDirection(uniPrice3,sushiPrice3, !pair3AavePool)
         console.log(direction)
